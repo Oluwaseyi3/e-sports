@@ -211,10 +211,9 @@ function App() {
                         </a>
                     </div>
 
-                    <video autoplay loop muted playsInline>
-                      <source src={hh} type="video/webm"/>
-                    
-                    </video>
+                    <video  autoplay="autoplay" loop="loop" muted >
+          <source  src={tour} type="video/mp4"/>
+        </video>
 
                 </div>
                 </Fade>
@@ -244,12 +243,9 @@ function App() {
               <Fade top>
                    <h1>LATEST BLOG POSTS</h1>
                     <div className='articles'>
-                        <video loop autoplay>
-                          <source
-                            src={tour}
-                            type="video/mp4"
-                          />
-                        </video>
+                    <video  autoplay="autoplay" loop="loop" muted >
+          <source  src={hh} type="video/mp4"/>
+        </video>
                       <div className='articles__text'>
                         <h4>Gaming are possible</h4>
                         <p>Join sports players from all over the world </p>
