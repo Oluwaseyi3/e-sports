@@ -15,6 +15,7 @@ import tour from "./img/tour.mp4"
 import pad2 from "./img/pad2.jpg"
 import pad1 from "./img/pad1.jpg"
 import germany from "./img/germany.jpg"
+import hh from "./img/hh.webm"
 import logo3 from "./img/logo3.png"
 import collection1 from "./img/collection1.png"
 import collection2 from "./img/collection2.png"
@@ -67,6 +68,16 @@ function App() {
 
               <a href='s' className='home-home nav__logo'>
                  Home
+              </a>
+
+              
+              <a href='s' className='home-home nav__logo'>
+                 Products
+              </a>
+
+              
+              <a href='s' className='home-home nav__logo'>
+                 Players
               </a>
 
               <div className="nav__menu" >
@@ -190,6 +201,7 @@ function App() {
            <div className='collection__container container'>
            <Fade left>
                 <div className='collection__explore'>
+                   
                     <div className='collection__data-men'>
                         <h2 className='collection__title'>
                         Men <br/> Women
@@ -199,7 +211,11 @@ function App() {
                         </a>
                     </div>
 
-                   <img src={germany} alt="" />
+                    <video autoplay loop muted playsInline>
+                      <source src={hh} type="video/webm"/>
+                    
+                    </video>
+
                 </div>
                 </Fade>
 

@@ -289,6 +289,13 @@ img {
   overflow: hidden;
 }
 
+video{
+   max-width: 250px;
+   width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .collection__container{
   position: relative;
   height: 571px;
@@ -356,10 +363,17 @@ img {
   max-width: 120px;
 }
 
+.collection__explore video{
+  width: 90%;
+  max-width: 200px;
+}
+
 
 .articles__text{
   line-height: 1.5rem;
 }
+
+
 
 .articles__text{
   color: #fff;
