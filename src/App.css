@@ -284,13 +284,14 @@ img {
 /*=============== COLLECTION ===============*/
 
 
+
 .collection{
   background-color: var(--bg-color);
   overflow: hidden;
 }
 
 video{
-   max-width: 250px;
+   max-width: 100px;
    width: 70%;
   height: 100%;
   object-fit: cover;
@@ -313,6 +314,7 @@ video{
   display: grid;
   column-gap: 2rem;
   position: absolute;
+
 }
 
 
@@ -348,6 +350,20 @@ video{
 .product__container{
   padding: 4rem 0 1rem;
   row-gap: 8.5rem;
+}
+
+.product__container .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.product__container video{
+  height: 50vh;
+  width: 100%;
 }
 
 .articles{

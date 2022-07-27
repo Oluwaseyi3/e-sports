@@ -201,20 +201,18 @@ function App() {
            <div className='collection__container container'>
            <Fade left>
                 <div className='collection__explore'>
-                   
+          
                     <div className='collection__data-men'>
                         <h2 className='collection__title'>
-                        Men <br/> Women
+                        Men <br/> Womens
                         </h2>
                         <a href="" className='button__link'>
                         Explore <AiOutlineArrowRight/>
                         </a>
                     </div>
 
-                    <video  autoplay="autoplay" loop="loop" muted >
-          <source  src={tour} type="video/mp4"/>
-        </video>
-
+        
+                    <img src={germany} alt="" />
                 </div>
                 </Fade>
 
@@ -239,14 +237,17 @@ function App() {
 
 
        <section className='section product'>
+      
               <div className='product__container container'>
+          
+                <video  autoplay="autoplay" loop="loop" muted className='container' >
+          <source  src={tour} type="video/mp4"/>
+        </video>
               <Fade top>
                    <h1>LATEST BLOG POSTS</h1>
-                    <div className='articles'>
-                    <video  autoplay="autoplay" loop="loop" muted >
-          <source  src={hh} type="video/mp4"/>
-        </video>
-                      <div className='articles__text'>
+                   <div className='articles'><img src={stream} alt=""/>
+            
+           <div className='articles__text'>
                         <h4>Gaming are possible</h4>
                         <p>Join sports players from all over the world </p>
                       </div>
