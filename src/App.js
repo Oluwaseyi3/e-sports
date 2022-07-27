@@ -11,6 +11,7 @@ import virtual1 from "./img/virtual1.jpg"
 import virtual2 from "./img/virtual2.jpg"
 import basket from "./img/basket.jpg"
 import ma from "./img/ma.jpg"
+import tour from "./img/tour.mp4"
 import pad2 from "./img/pad2.jpg"
 import pad1 from "./img/pad1.jpg"
 import germany from "./img/germany.jpg"
@@ -226,7 +227,13 @@ function App() {
               <div className='product__container container'>
               <Fade top>
                    <h1>LATEST BLOG POSTS</h1>
-                    <div className='articles'><img src={logo3} alt=""/>
+                    <div className='articles'>
+                        <video loop autoplay>
+                          <source
+                            src={tour}
+                            type="video/mp4"
+                          />
+                        </video>
                       <div className='articles__text'>
                         <h4>Gaming are possible</h4>
                         <p>Join sports players from all over the world </p>

@@ -351,7 +351,7 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.articles img{
+.articles img, video{
   width: 40%;
   max-width: 120px;
 }
@@ -364,6 +364,8 @@ img {
 .articles__text{
   color: #fff;
 }
+
+
 /* Swiper class */
 
 
@@ -591,6 +593,8 @@ img {
 
    .nav{
     height: calc(var(--header-height) + 1.5rem);
+    margin: auto;
+    width: 99%;
    }
 
    .nav__list{
@@ -616,6 +620,41 @@ img {
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
+@media screen and (min-width: 1314px){
+  body{
+    zoom: 1;
+    margin: auto;
+  }
+}
 
-/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+@media screen and (min-width: 1470px){
+  body{
+    zoom: 1.5;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 2048px){
+  body{
+    zoom: 2.5;
+    margin: auto;
+  }
 
+
+.home__container, .footer__container, .new__container, .collection__container{
+  margin: auto;
+}
+}
+
+/* For 4K resolutions (3840 x 02160, 4096 x 2160) */
+@media screen and (min-width: 3840px){
+  body{
+    zoom: 2.2;
+    margin: auto;
+   
+  }
+
+.home__container, .footer__container, .new__container, .collection__container{
+  margin: auto;
+}
+
+}
