@@ -219,7 +219,7 @@ img {
   max-width: 450px;
   width: 80%;
   position: absolute;
-  right: -2rem;
+  right: -4rem;
   top: -9.5rem;
 }
 
@@ -577,7 +577,8 @@ video{
 @media screen and (min-width:577px) {
   
   .footer__content{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(4, max-content);
+    margin: auto;
   }
 
   
@@ -593,7 +594,8 @@ video{
    .home__container, .new__container
    {
     grid-template-columns: repeat(2, max-content);
-    justify-content: center;
+  margin: auto;
+  
     font-size: var(--h1-font-size);
    }
 
@@ -615,6 +617,13 @@ video{
     padding: 7rem 0 1rem;
   }
 
+   .new__container
+   {
+    grid-template-columns: repeat(3, max-content);
+  
+  
+    font-size: var(--h1-font-size);
+   }
  
 
    .section__title{

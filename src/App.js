@@ -11,6 +11,8 @@ import virtual1 from "./img/virtual1.jpg"
 import virtual2 from "./img/virtual2.jpg"
 import basket from "./img/basket.jpg"
 import ma from "./img/ma.jpg"
+import boy from "./img/boy.jpg"
+import gamer from "./img/gamer.jpg"
 import tour from "./img/tour.mp4"
 import pad2 from "./img/pad2.jpg"
 import pad1 from "./img/pad1.jpg"
@@ -165,7 +167,7 @@ function App() {
              
 
                 <article className="new__card">
-                    <img  src={basket} alt="new image" className='new__img' />
+                    <img  src={gamer} alt="new image" className='new__img' />
 
                      <a href='#' className='new__link'> 
                            <div className="new__data">
@@ -212,7 +214,7 @@ function App() {
                     </div>
 
         
-                    <img src={germany} alt="" />
+                    <img src={boy} alt="" />
                 </div>
                 </Fade>
 
@@ -240,9 +242,9 @@ function App() {
       
               <div className='product__container container'>
           
-                <video  autoplay="autoplay" loop="loop" muted className='container' >
+                {/* <video  autoplay="autoplay" loop="loop" muted className='container' >
           <source  src={tour} type="video/mp4"/>
-        </video>
+        </video> */}
               <Fade top>
                    <h1>LATEST BLOG POSTS</h1>
                    <div className='articles'><img src={stream} alt=""/>
