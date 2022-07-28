@@ -26,6 +26,10 @@ import Fade from 'react-reveal/Fade';
 
 import {MdOutlineSportsEsports} from 'react-icons/md';
 
+import {FaRegTimesCircle} from 'react-icons/fa';
+
+import {HiOutlineMenuAlt4} from 'react-icons/hi';
+
 import { AiOutlineHome, AiOutlineSearch ,AiOutlineMoneyCollect, AiOutlineArrowRight, AiOutlineTwitter} from 'react-icons/ai';
 
 import { BsFillMoonFill, BsTwitch, BsInstagram, BsSun} from 'react-icons/bs';
@@ -46,6 +50,9 @@ function App() {
 
   const [theme, setTheme] = useLocalStorage("theme", defaultDark ? "dark" : "light")
 
+  const [click, setClick] = useState(false)
+
+  const handleClick = () => setClick(!false)
   const switchTheme = () => {
     const newTheme = theme ==="light" ? "dark" : "light"
     setTheme(newTheme)
@@ -98,7 +105,9 @@ function App() {
                     </li>
 
                     
-
+                  {/* <div className='hammy' onClick={handleClick}>
+                       {click ? (<FaRegTimesCircle className='react-iconss'/>) : (<HiOutlineMenuAlt4 className='react-iconss'/>)}
+                  </div> */}
                    
                   </ul>
               </div>

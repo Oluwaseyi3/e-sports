@@ -32,7 +32,10 @@ img {
   vertical-align: middle;
   color: beige;
 }
-
+.react-iconss {
+  vertical-align: middle;
+ 
+}
 .esports{
   font-size: 40px;
   
@@ -392,7 +395,7 @@ video{
 
 
 .articles__text{
-  color: #fff;
+  color: var( --text-color);
 }
 
 
@@ -410,6 +413,7 @@ video{
 }
 .footer__container{
   row-gap: 3rem;
+  margin: auto;
 }
 
 .footer__logo{
@@ -465,11 +469,11 @@ video{
   padding: .4rem;
 }
 
-.footer__info{
-  margin-top: 5rem;
+/* .footer__info{
+  margin-top: 10rem;
   padding-bottom: 5rem;
 
-}
+} */
 
 
 .footer__info{
@@ -479,6 +483,7 @@ video{
   flex-direction: column;
   align-items: center;
   row-gap: .75rem;
+  padding-top: 50px;
 }
 
 
@@ -565,10 +570,18 @@ video{
   .collection__data-women{
     margin-bottom: 0;
   }
+
+  .hammy{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .home-home{
+    display: none;
+  }
+
+  .hammy{
     display: none;
   }
 }
